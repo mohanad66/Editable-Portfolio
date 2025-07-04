@@ -1,0 +1,273 @@
+.portfolio {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .hero {
+        background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+        color: #fff;
+        padding: 4rem 2rem 3rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0 0 32px 32px;
+        box-shadow: 0 6px 24px rgba(37, 117, 252, 0.10);
+
+        .text {
+            flex: 1 1 320px;
+
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 0.7rem;
+                font-weight: 800;
+                letter-spacing: -1px;
+                line-height: 1.1;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 0;
+                opacity: 0.95;
+            }
+        }
+
+        .carousel {
+            flex: 1 1 320px;
+            margin-left: 3rem;
+            min-width: 560px;
+            max-width: 560px;
+            width: 100%;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 1rem;
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 2.5rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .cards-container {
+        .title {
+
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #2575fc;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem;
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(37, 117, 252, 0.08);
+            padding: 2rem 1.5rem;
+            transition: box-shadow 0.2s, transform 0.2s;
+            border: 1px solid #e3e8f0;
+
+            &:hover {
+                box-shadow: 0 8px 32px rgba(37, 117, 252, 0.18);
+                transform: translateY(-6px) scale(1.03);
+            }
+        }
+    }
+
+    .skills-container {
+        .title {
+
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #6a11cb;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        width: 100%;
+        gap: 4rem;
+        justify-content: center;
+
+        .skill {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, #e3e8f0 70%, #f8f9fa 100%);
+            border-radius: 10px;
+            padding: 1rem 1rem;
+            font-size: .9rem;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(106, 17, 203, 0.04);
+            font-weight: 500;
+            border: 1px solid #d1d9e6;
+            transition: background 0.2s, box-shadow 0.2s;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            -webkit-transition: background 0.2s, box-shadow 0.2s;
+            -moz-transition: background 0.2s, box-shadow 0.2s;
+            -ms-transition: background 0.2s, box-shadow 0.2s;
+
+            p {
+                margin: 2%;
+            }
+
+            -o-transition: background 0.2s,
+            box-shadow 0.2s;
+
+            &:hover {
+                background: linear-gradient(90deg, #d1d9e6 70%, #e3e8f0 100%);
+                box-shadow: 0 4px 16px rgba(37, 117, 252, 0.10);
+            }
+        }
+    }
+
+    .footer {
+        background: #23272f;
+        color: #fff;
+        padding: 2.5rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-radius: 24px 24px 0 0;
+        box-shadow: 0 -2px 12px rgba(37, 117, 252, 0.07);
+
+        .copyrights {
+            flex: 2 1 320px;
+
+            h5 {
+                font-size: 1.15rem;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+                letter-spacing: 0.2px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #bbb;
+                margin: 0;
+            }
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 0.9rem;
+            margin: 2%;
+
+            .contactway {
+                background: #333b4a;
+                color: #fff;
+                border-radius: 8px;
+                padding: 0.8rem 1.2rem;
+                font-size: 1.05rem;
+                font-weight: 500;
+                transition: background 0.2s, color 0.2s;
+                border: 1px solid transparent;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+
+                &:hover {
+                    background: #2575fc;
+                    color: #fff;
+                    border-color: #6a11cb;
+                }
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 1100px) {
+    .portfolio {
+        .container {
+            max-width: 98vw;
+        }
+
+        .cards-container {
+            gap: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .portfolio {
+        .hero {
+
+            flex-direction: column;
+
+            .carousel {
+                margin-left: 0;
+                margin-top: 2rem;
+                max-width: 100%;
+            }
+        }
+
+        .footer {
+            flex-direction: column;
+            gap: 2rem;
+            border-radius: 24px 24px 0 0;
+        }
+    }
+}
+
+.title {
+    grid-column: 1/-1;
+}
+
+@media (max-width: 600px) {
+    .portfolio {
+        .hero {
+            padding: 2.2rem 0.7rem 1.5rem 0.7rem;
+
+            .text h2 {
+                font-size: 2rem;
+            }
+
+            .text h3 {
+                font-size: 1.1rem;
+            }
+        }
+
+        .container {
+            padding: 0 0.5rem;
+        }
+
+        .cards-container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .skills-container {
+            gap: 0.7rem 1rem;
+
+            .skill {
+                padding: 0.7rem 1.1rem;
+                font-size: 1rem;
+            }
+        }
+
+        .footer {
+            padding: 1.2rem 0.7rem;
+        }
+    }
+}
