@@ -130,5 +130,5 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
         "http://localhost:3000", # Example for a React frontend
-        "https://your-frontend-domain.com",
+        "https://editable-portfolio.netlify.app/",
     ]
